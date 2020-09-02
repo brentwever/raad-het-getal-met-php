@@ -11,7 +11,7 @@
 <body>
 <div class='container'>
 <br>
-    <h3><strong>Game over!</strong></h3>
+       <img src="game_over.jpg" alt="Game Over">
 </div>
 </body>
 </html>
