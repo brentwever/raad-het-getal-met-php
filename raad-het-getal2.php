@@ -43,7 +43,7 @@ if (!isset($_POST["guess"])) {
         <form action="" method="POST">
         <p><strong>Geef hier uw getal op tussen <?php echo $laagste ?> en <?php echo $hoogste ?>:</strong>
             <input type="text" name="guess"></p>
-            <input type="text" name="numtobeguessed" 
+            <input type="hidden" name="numtobeguessed" 
                    value="<?php echo $_POST["numtobeguessed"]; ?>" ></p>
     <p><input type="submit" value="Verstuur"/></p>
         </form>
