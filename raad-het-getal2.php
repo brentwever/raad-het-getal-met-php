@@ -37,15 +37,21 @@ if (!isset($_POST["guess"])) {
 <html>
     <head>
         <title>Een PHP raad-het-getal spelletje</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </head>
     <body>
-    <h1><?php echo $message; ?></h1>
+    <div class='container'>
+    <br>
+    <h3><strong><?php echo $message; ?></strong></h3>
         <form action="" method="POST">
-        <p><strong>Geef hier uw getal op tussen <?php echo $laagste ?> en <?php echo $hoogste ?>:</strong>
-            <input type="text" name="guess"></p>
-            <input type="hidden" name="numtobeguessed" 
+        <div class="form-group">
+        <p>Geef hier uw getal op tussen <?php echo $laagste ?> en <?php echo $hoogste ?><br>
+            <input class="form-control" type="text" name="guess"></p>
+            <input class="form-control" type="hidden" name="numtobeguessed" 
                    value="<?php echo $_POST["numtobeguessed"]; ?>" ></p>
-    <p><input type="submit" value="Verstuur"/></p>
+    <p><input class="btn btn-success" type="submit" value="Verstuur"/></p>
         </form>
+    </div>
     </body>
 </html>
